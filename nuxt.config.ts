@@ -8,4 +8,11 @@ export default defineNuxtConfig({
       wsServer: "https://data.elektron.art",
     },
   },
+  nitro: {
+    preset: "cloudflare_module",
+    cloudflare: {
+      deployConfig: true,
+      nodeCompat: true,
+    },
+  },
 });
